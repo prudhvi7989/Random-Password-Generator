@@ -19,7 +19,7 @@ A **modern, responsive random password generator** built with **HTML, CSS, and J
 ## 🧩 Technologies Used
 
 - **HTML5** – Structure  
-- **CSS3** – Glassmorphism + Media Queries + Animations  
+- **CSS3** – Styling  
 - **JavaScript (ES6)** – Password logic & clipboard  
 - **Google Fonts (Poppins)** – Clean, modern typography  
 
@@ -32,7 +32,7 @@ A **modern, responsive random password generator** built with **HTML, CSS, and J
 securepass-x/
 │
 ├── index.html        # Main HTML file
-├── style.css         # Styling (glassmorphic + responsive)
+├── style.css         # Styling 
 ├── script.js         # Password generation logic
 └── README.md         # Project documentation
 
