@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 380px;
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+  text-align: center;
+}
+
+h1 {
+  color: #00ffc8;
+  text-shadow: 0 0 10px #00ffc8;
+  margin-bottom: 20px;
+}
+
+.password-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-box input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.password-box button {
+  position: absolute;
+  right: 8px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: #00ffc8;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.password-box button:hover {
+  transform: scale(1.15);
+}
+
+#copyMsg {
+  position: absolute;
+  bottom: -18px;
+  right: 10px;
+  font-size: 12px;
+  color: #00ffc8;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.length-control {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.length-control label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.length-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#lengthSlider {
+  flex: 1;
+  accent-color: #00ffc8;
+  cursor: pointer;
+}
+
+#lengthBox {
+  width: 60px;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+.options {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.options label {
+  display: block;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.strength {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.strength-bar {
+  height: 8px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+#bar {
+  width: 0%;
+  height: 100%;
+  background: #ff4b5c;
+  border-radius: 10px;
+  transition: width 0.3s, background 0.3s;
+}
+
+#generateBtn {
+  width: 100%;
+  background: #00ffc8;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#generateBtn:hover {
+  background: #00e0b5;
+  transform: scale(1.05);
+}

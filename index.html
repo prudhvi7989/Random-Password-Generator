@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="pass.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+
+    <div class="password-box">
+      <input type="text" id="passwordDisplay" readonly placeholder="Click Generate..." />
+      <button id="copyBtn" title="Copy Password">📋</button>
+      <span id="copyMsg"></span>
+    </div>
+
+    <div class="length-control">
+      <label>Password Length</label>
+      <div class="length-inputs">
+        <input type="range" id="lengthSlider" min="" max="32" value="12">
+        <input type="number" id="lengthBox" min="0" max="32" value="12">
+      </div>
+    </div>
+
+    <div class="options">
+      <label><input type="checkbox" id="uppercase" checked> Include Uppercase (A–Z)</label>
+      <label><input type="checkbox" id="lowercase" checked> Include Lowercase (a–z)</label>
+      <label><input type="checkbox" id="numbers" checked> Include Numbers (0–9)</label>
+      <label><input type="checkbox" id="symbols" checked> Include Symbols (!@#$...)</label>
+    </div>
+
+    <div class="strength">
+      <label>Password Strength</label>
+      <div class="strength-bar"><div id="bar"></div></div>
+    </div>
+
+    <button id="generateBtn">Generate Password</button>
+  </div>
+
+  <script src="pass.js"></script>
+</body>
+</html>
